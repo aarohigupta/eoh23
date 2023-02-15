@@ -33,7 +33,6 @@ def bunnyears(frame):
             face_filtered = cv2.add(face_filtered, bunnyears_fg_normalized)
             face_filtered = (face_filtered * 255).astype(np.uint8)
             frame[y:y+h, x:x+w] = face_filtered
-            frame = cv2.add(frame[y:y+h, x:x+h], bunnyears_fg_normalized)
 
 
 

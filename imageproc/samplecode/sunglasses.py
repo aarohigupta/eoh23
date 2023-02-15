@@ -37,7 +37,7 @@ while True:
 
         # Normalize the face and sunglasses layers
         face_normalized = face_float / 255.0
-        bunnyears_fg_normalized = bunnyears_fg_float / 255.0
+        sunglasses_fg_normalized = sunglasses_fg_float / 255.0
 
         # Multiply the normalized face layer by (1 - alpha)
         face_filtered = cv2.multiply(face_normalized, 1.0 - sunglasses_fg_normalized)
