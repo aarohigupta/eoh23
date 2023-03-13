@@ -10,7 +10,6 @@ while(True):
     # by frame
     ret, frame = vid.read()
     frame = frame[0:768, 310:1078]
-
     #cropping frame
 
     # Display the resulting frame
